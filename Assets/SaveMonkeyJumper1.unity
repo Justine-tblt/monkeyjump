@@ -768,6 +768,7 @@ GameObject:
   m_Component:
   - component: {fileID: 741190107}
   - component: {fileID: 741190106}
+  - component: {fileID: 741190108}
   m_Layer: 0
   m_Name: GameOverManager
   m_TagString: Untagged
@@ -798,6 +799,30 @@ MonoBehaviour:
   CardBorderColor: {r: 1, g: 0.92, b: 0.36, a: 1}
   TitleColor: {r: 1, g: 0.96, b: 0.42, a: 1}
   ScoreColor: {r: 1, g: 1, b: 1, a: 1}
+  ButtonColor: {r: 1, g: 0.62, b: 0.2, a: 1}
+  ButtonTextColor: {r: 0.12, g: 0.14, b: 0.2, a: 1}
+--- !u!114 &741190108
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 741190105}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c4e9db8f4d84f1f8b2fd4b3a6b8a9c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::StartUI
+  OverlayRoot: {fileID: 0}
+  TitleText: {fileID: 0}
+  PromptText: {fileID: 0}
+  StartButton: {fileID: 0}
+  StartButtonLabel: {fileID: 0}
+  OverlayColor: {r: 0.06, g: 0.12, b: 0.22, a: 0.68}
+  CardColor: {r: 0.42, g: 0.82, b: 1, a: 0.95}
+  CardBorderColor: {r: 1, g: 0.92, b: 0.36, a: 1}
+  TitleColor: {r: 1, g: 0.96, b: 0.42, a: 1}
+  PromptColor: {r: 1, g: 1, b: 1, a: 1}
   ButtonColor: {r: 1, g: 0.62, b: 0.2, a: 1}
   ButtonTextColor: {r: 0.12, g: 0.14, b: 0.2, a: 1}
 --- !u!4 &741190107
