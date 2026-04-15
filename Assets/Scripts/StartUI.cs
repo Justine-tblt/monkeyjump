@@ -158,7 +158,7 @@ public class StartUI : MonoBehaviour
         PromptText = CreateTMP(
             parent: cardObject.transform,
             objectName: "Prompt",
-            text: "Press start to begin",
+            text: "Appuyer sur jouer pour commencer",
             size: 40,
             color: PromptColor,
             anchorMin: new Vector2(0.5f, 0.5f),
