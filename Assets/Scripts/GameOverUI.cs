@@ -157,7 +157,7 @@ public class GameOverUI : MonoBehaviour
         TitleText = CreateTMP(
             parent: cardObject.transform,
             objectName: "Title",
-            text: "MonkeyBird",
+            text: "MonkeyJump",
             size: 72,
             color: TitleColor,
             anchorMin: new Vector2(0.5f, 1f),
