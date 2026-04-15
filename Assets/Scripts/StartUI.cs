@@ -7,6 +7,8 @@ using UnityEngine.InputSystem.UI;
 
 public class StartUI : MonoBehaviour
 {
+    private static bool HasStartedThisSession;
+
     [Header("References")]
     public GameObject OverlayRoot;
     public TextMeshProUGUI TitleText;
@@ -36,6 +38,13 @@ public class StartUI : MonoBehaviour
             StartButton.onClick.AddListener(StartGame);
         }
 
+        if (HasStartedThisSession)
+        {
+            HideImmediate();
+            Time.timeScale = 1f;
+            return;
+        }
+
         ShowImmediate();
         Time.timeScale = 0f;
     }
@@ -47,6 +56,7 @@ public class StartUI : MonoBehaviour
             return;
         }
 
+        HasStartedThisSession = true;
         HasStarted = true;
         Time.timeScale = 1f;
         HideImmediate();
